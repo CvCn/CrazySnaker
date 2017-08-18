@@ -155,26 +155,25 @@ public class CvSnaker extends JPanel
 				{
 					e.printStackTrace();
 				}
+				repaint();
+				
+				switch (score)
+				{
+					case 3: speed = 5;break;
+					case 5: speed = 6;break;
+					case 7: speed = 7;break;
+					case 9: speed = 9;break;
+					case 11: speed = 11;break;
+					case 17: speed = 15;break;
+					case 25: speed = 17;break;
+					case 35: speed = 20;break;
+					case 50: speed = 27;break;
+					case 60: speed = 34;break;
+					case 80: speed = 42;break;
+					case 100: speed = 50;break;
+				}
 			}
-		}, 1, 1);
-		while(true){
-			switch (score)
-			{
-				case 3: speed = 5;break;
-				case 5: speed = 6;break;
-				case 7: speed = 7;break;
-				case 9: speed = 9;break;
-				case 11: speed = 11;break;
-				case 17: speed = 15;break;
-				case 25: speed = 17;break;
-				case 35: speed = 20;break;
-				case 50: speed = 27;break;
-				case 60: speed = 34;break;
-				case 80: speed = 42;break;
-				case 100: speed = 50;break;
-			}
-			repaint();
-		} 
+		}, 1, 1); 
 	}
 	/**
 	 * 控制蛇向上运动
