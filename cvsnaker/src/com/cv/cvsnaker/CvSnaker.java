@@ -351,8 +351,7 @@ public class CvSnaker extends JPanel
 		g.drawString("疯狂贪吃蛇", 170, 300);
 		g.setFont(new Font("微软雅黑", Font.BOLD, 30));
 		g.drawString("Enter->", 500, 350);
-		g.setFont(new Font("楷体", Font.BOLD, 18));
-		g.drawString("因为速度比较快，难度比较高，所以可以穿身体", 200, 450);
+		g.setFont(new Font("微软雅黑", Font.BOLD, 18));
 		g.drawString("by Cv", 500, 500);
 	}
 	
